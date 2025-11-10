@@ -1,0 +1,31 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.gallery-container img {
+    width: 30rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery-container img {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .gallery-container img {
+        width: 20rem;
+    }
+}
